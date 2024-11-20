@@ -1,4 +1,4 @@
-# client-peer2peer
+# Mô Tả Dự Án
 
 ### Làm sao để chạy source code này ??
 - Bước 1: Git clone nó về

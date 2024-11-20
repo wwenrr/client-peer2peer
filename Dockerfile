@@ -1,8 +1,7 @@
-FROM python:3.9-slim
+FROM python:latest
 RUN apt-get update
 WORKDIR /app
 COPY . /app
-RUN chmod +x build.sh
-RUN ./build.sh
-ENTRYPOINT ["bash", "-c", "source lib/bin/activate && exec python3 -B -m src.run --reload"]
+RUN chmod +x run.sh
+CMD ["./run.sh"]
 

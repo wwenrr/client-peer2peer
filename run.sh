@@ -7,6 +7,7 @@ if [ ! -d "lib" ]; then
     python3 -m venv lib
     source lib/bin/activate
     pip install -r package.txt
+    clear
 else 
     source lib/bin/activate
 fi

@@ -13,5 +13,9 @@ async def custom_error_handler(request, exc: CustomError):
     current_time = datetime.fromtimestamp(timestamp)
     return JSONResponse(
         status_code=exc.code,  
-        content={"code": exc.code, "timestamp" : current_time.strftime("%Y-%m-%d %H:%M:%S"), "message": exc.message}  
+        content={
+            "code": exc.code, 
+            "timestamp" : current_time.strftime("%Y-%m-%d %H:%M:%S"), 
+            "message": exc.message
+        }  
     )

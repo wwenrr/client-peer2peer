@@ -13,8 +13,3 @@ else
 fi
 
 python3 -B -m src.run --reload
-
-
-
-
-

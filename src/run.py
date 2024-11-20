@@ -1,4 +1,4 @@
-from fastapi import  FastAPI
+from fastapi import FastAPI
 from src.main.response.custom_exceptions import CustomError, custom_error_handler
 
 from src.main.router.fileRouter import router as fileRouter
